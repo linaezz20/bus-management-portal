@@ -1,0 +1,120 @@
+/* src/components/PresenceTable/PresenceTable.css */
+.data-table-container {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.table-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.transport-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transport-table th,
+.transport-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.schedule-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-indicator {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+/* ExportButton.css */
+.export-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.export-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.export-button:hover {
+  background-color: #45a049;
+}
+
+.export-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.export-options {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 10px;
+  right: 0;
+  display: none;
+}
+
+.export-dropdown:hover .export-options {
+  display: block;
+}
+
+.export-option {
+  margin: 8px 0;
+}
+
+.export-option label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.export-option select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* Pour les boutons dans le tableau */
+.actions-cell {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.actions-cell .export-button {
+  padding: 4px 8px;
+  font-size: 0.9em;
+}
+/* Ajoutez ces styles */
+.transport-table td {
+  position: relative;
+}
+
+.today-marker {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  font-size: 0.7em;
+  font-weight: bold;
+}

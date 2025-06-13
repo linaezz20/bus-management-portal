@@ -1,0 +1,99 @@
+.gps-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.gps-modal-container {
+  background: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  padding: 20px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.map-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.bus-emoji-marker {
+  text-align: center;
+  background: transparent;
+  border: none;
+}
+
+.loading-message,
+.error-message {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.error-message {
+  color: #ff4444;
+}
+
+.status-info {
+  margin-top: 10px;
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.status-info h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.refresh-button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.refresh-button:hover {
+  background: #3367d6;
+}
+
+.bus-popup {
+  min-width: 250px;
+}
+
+.bus-popup h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.bus-popup p {
+  margin: 5px 0;
+}

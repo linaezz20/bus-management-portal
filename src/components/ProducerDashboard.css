@@ -1,0 +1,262 @@
+/* ProducerDashboard.css */
+.producer-dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.producer-nav {
+  background: linear-gradient(135deg, #4a6fa5 0%, #3a5a8a 100%);
+  color: white;
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.nav-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+}
+
+.nav-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+
+.user-info-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.user-name {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.user-segment {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.date-controls {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.week-input,
+.date-input {
+  padding: 0.5rem 0.7rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.week-input:hover,
+.date-input:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.week-input:focus,
+.date-input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+.week-input::-webkit-calendar-picker-indicator,
+.date-input::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  opacity: 0.8;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+  transform: translateY(-1px);
+}
+
+.icon {
+  font-size: 1.1rem;
+}
+
+.producer-content {
+  flex: 1;
+  padding: 1.5rem 2rem;
+  background-color: #f5f7fa;
+}
+
+/* Status Bar Improvements */
+.status-bar {
+  background-color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.refresh-btn {
+  background-color: #4a6fa5;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.refresh-btn:hover {
+  background-color: #3a5a8a;
+  transform: translateY(-1px);
+}
+
+/* Segment Info Card */
+.segment-info {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #4a6fa5;
+}
+
+.segment-info h2 {
+  margin-top: 0;
+  color: #4a6fa5;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Table Improvements */
+.presence-table-container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.table-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #f8fafc;
+  border-bottom: 1px solid #eaeef2;
+}
+
+.search-input {
+  padding: 0.6rem 1rem;
+  border: 1px solid #eaeef2;
+  border-radius: 6px;
+  width: 250px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #4a6fa5;
+  box-shadow: 0 0 0 2px rgba(74, 111, 165, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .producer-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .user-info-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    width: 100%;
+  }
+
+  .date-controls {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .week-input,
+  .date-input {
+    flex: 1;
+    min-width: 100%;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .producer-content {
+    padding: 1rem;
+  }
+}

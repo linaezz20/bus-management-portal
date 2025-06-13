@@ -1,0 +1,53 @@
+.export-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.export-button {
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.export-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.export-options {
+  position: absolute;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 5px;
+  min-width: 250px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  z-index: 100;
+}
+
+.export-option {
+  margin-bottom: 10px;
+}
+
+.export-option label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.export-option select,
+.export-option input {
+  width: 100%;
+   padding: 5px 2px 5px 0px; /* ← ajoute du padding à gauche */
+
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
